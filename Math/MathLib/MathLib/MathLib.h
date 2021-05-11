@@ -7,6 +7,11 @@
 #define MATHLIB_API __declspec(dllimport)
 #endif
 
+
+/*
+* Fibonacci
+*/
+
 /*
 * The Fibonacci recurrence relation describes a sequence of F
 * where F(n) is { n = 0, a
@@ -38,3 +43,11 @@ extern "C" MATHLIB_API unsigned long long fibonacci_current();
 
 // Get the position of the current value in the sequence.
 extern "C" MATHLIB_API unsigned fibonacci_index();
+
+/*
+* Param: one - first integer input.
+* Param: two - second integer input.
+* Returns: one + two.
+*/
+extern "C" MATHLIB_API int sumAdd_int(
+	const int one, const int two);

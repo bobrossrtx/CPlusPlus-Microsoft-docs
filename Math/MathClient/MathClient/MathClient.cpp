@@ -12,5 +12,7 @@ int main(int argc, char **argv) {
 	} while (fibonacci_next());
 
 	// Report count of values written before overflow.
-	printf("%u Fibonacci sequence values fit in an unsigned 64-bit integer.", fibonacci_index() + 1);
+	printf("%u Fibonacci sequence values fit in an unsigned 64-bit integer.\n", fibonacci_index() + 1);
+
+	printf("The sum of 5 + 6 == %d\n", sumAdd_int(5, 6));
 }

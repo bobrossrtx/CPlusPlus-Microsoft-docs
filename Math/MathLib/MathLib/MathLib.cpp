@@ -57,3 +57,14 @@ unsigned long long fibonacci_current()
 unsigned fibonacci_index() {
 	return index_;
 }
+
+/*
+* Param: one - first integer input.
+* Param: two - second integer input.
+* Returns: one + two.
+*/
+int sumAdd_int(
+	const int one, const int two)
+{
+	return one + two;
+}
