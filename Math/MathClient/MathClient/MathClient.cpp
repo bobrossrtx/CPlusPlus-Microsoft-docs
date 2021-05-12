@@ -12,7 +12,14 @@ int main(int argc, char **argv) {
 	} while (fibonacci_next());
 
 	// Report count of values written before overflow.
-	printf("%u Fibonacci sequence values fit in an unsigned 64-bit integer.\n", fibonacci_index() + 1);
+	printf("%u Fibonacci sequence values fit in an unsigned 64-bit integer.\r\n", fibonacci_index() + 1);
 
-	printf("The sum of 5 + 6 == %d\n", sumAdd_int(5, 6));
+	// Printing the sum of 5 + 6 using the sumAdd_int method
+	printf("\r\nThe sum of 5 + 6 == %d\r\n", sumAdd_int(5, 6));
+
+	//Concatinating the strings "", "" without spaces
+	std::cout << concatStr("Hello", "World") << std::endl;
+
+	//Concatinating the strings "", "" with spaces
+	std::cout << concatStrSpc("Hello", "World") << std::endl;
 }
