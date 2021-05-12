@@ -10,6 +10,10 @@ static unsigned long long current_;		// current sequence value
 static unsigned index_;								// Current seq. position
 
 /*
+* Fibonacci
+*/
+
+/*
 * Initialize a Fibinacci relation sequence
 * such that F(0) = a, F(1) = b.
 * This function must be called before any other function
@@ -59,6 +63,10 @@ unsigned fibonacci_index() {
 }
 
 /*
+* Math
+*/
+
+/*
 * Param: one - first integer input.
 * Param: two - second integer input.
 * Returns: one + two.
@@ -67,4 +75,69 @@ int sumAdd_int(
 	const int one, const int two)
 {
 	return one + two;
+}
+
+/*
+* Param: one - first integer input.
+* Param: two - second integer input.
+* Returns: one - two.
+*/
+int sumSub_int(
+	const int one, const int two)
+{
+	return one - two;
+}
+
+/*
+* Param: one - first integer input.
+* Param: two - second integer input.
+* Returns: one / two.
+*/
+int sumDiv_int(
+	const int one, const int two)
+{
+	return one / two;
+}
+
+/*
+* Param: one - first integer input.
+* Param: two - second integer input.
+* Returns: one * two.
+*/
+int sumMult_int(
+	const int one, const int two)
+{
+	return one * two;
+}
+
+/*
+* Strings
+*/
+
+/*
+* Concatonates strings together without spaces.
+* Param: inStr0 - first input string.
+* Param: inStr1 - second input string.
+* Returns: outStr0 + outStr1; ("" + "")
+*/
+std::string concatStr(
+	const char* inStr0, const char* inStr1)
+{
+	std::string outStr0(inStr0);
+	std::string outStr1(inStr1);
+	return outStr0 + outStr1;
+}
+
+/*
+* Concatonates strings together with spaces.
+* Param: inStr0 - first input string.
+* Param: inStr1 - second input string.
+* Returns: outStr0 + outStr1; ("" + " " + "")
+*/
+std::string concatStrSpc(
+	const char* inStr0, const char* inStr1)
+{
+	std::string outStr0(inStr0);
+	std::string outStr1(inStr1);
+	return outStr0 + " " + outStr1;
 }
