@@ -45,9 +45,61 @@ extern "C" MATHLIB_API unsigned long long fibonacci_current();
 extern "C" MATHLIB_API unsigned fibonacci_index();
 
 /*
+* Math
+*/
+
+/*
 * Param: one - first integer input.
 * Param: two - second integer input.
 * Returns: one + two.
 */
 extern "C" MATHLIB_API int sumAdd_int(
 	const int one, const int two);
+
+/*
+* Param: one - first integer input.
+* Param: two - second integer input.
+* Returns: one - two.
+*/
+extern "C" MATHLIB_API int sumSub_int(
+	const int one, const int two);
+
+/*
+* Param: one - first integer input.
+* Param: two - second integer input.
+* Returns: one / two.
+*/
+extern "C" MATHLIB_API int sumDiv_int(
+	const int one, const int two);
+
+/*
+* Param: one - first integer input.
+* Param: two - second integer input.
+* Returns: one / two.
+*/
+extern "C" MATHLIB_API int sumMult_int(
+	const int one, const int two);
+
+/*
+* Strings
+*/
+
+#include <iostream>
+
+/*
+* Concatonates strings together without spaces.
+* Param: inStr0 - first input string.
+* Param: inStr1 - second input string.
+* Returns: outStr0 + outStr1; ("" + "")
+*/
+extern "C" MATHLIB_API std::string concatStr(
+	const char* inStr0, const char* inStr1);
+
+/*
+* Concatonates strings together with spaces.
+* Param: inStr0 - first input string.
+* Param: inStr1 - second input string.
+* Returns: outStr; ("", "")
+*/
+extern "C" MATHLIB_API std::string concatStrSpc(
+	const char* inStr0, const char* inStr1);
