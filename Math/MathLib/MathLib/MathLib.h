@@ -1,4 +1,4 @@
-// MathLib.h - Conatins declaration of math functions
+﻿// MathLib.h - Conatins declaration of math functions
 #pragma once
 
 #ifdef MATHLIB_EXPORTS
@@ -79,6 +79,20 @@ extern "C" MATHLIB_API int sumDiv_int(
 */
 extern "C" MATHLIB_API int sumMult_int(
 	const int one, const int two);
+
+/*
+* Param: input - input value to be square rooted
+* Returns: √(input)
+*/
+extern "C" MATHLIB_API double squareRoot(
+	const int input);
+
+/*
+* Param: input - input value to be square rooted
+* Returns: input ^ 2
+*/
+extern "C" MATHLIB_API double expo(
+	const int input, const int exponent);
 
 /*
 * Strings

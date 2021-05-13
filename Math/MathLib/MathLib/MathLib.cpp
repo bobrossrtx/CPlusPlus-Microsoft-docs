@@ -1,7 +1,8 @@
-// MathLib.cpp : Defines the exported functions for the DLL.
+﻿// MathLib.cpp : Defines the exported functions for the DLL.
 #include "pch.h" // use stdafx.h in Visual Studio 2017 and earlier
 #include <utility>
 #include <limits.h>
+#include <math.h>
 #include "MathLib.h"
 
 // DLL internal state variables:
@@ -108,6 +109,32 @@ int sumMult_int(
 	const int one, const int two)
 {
 	return one * two;
+}
+
+/*
+* Param: input - input value to be square rooted
+* Returns: √(input)
+*/
+double squareRoot(
+	const int input)
+{
+	return pow(input, 0.5);
+}
+
+/*
+* Param: input - input value to be square rooted
+* Returns: input ^ 2
+*/
+double expo(
+	const int input, int exponent)
+{
+	double result = 1;
+	while (exponent != 0) {
+		result *= input;
+		--exponent;
+	}
+
+	return result;
 }
 
 /*

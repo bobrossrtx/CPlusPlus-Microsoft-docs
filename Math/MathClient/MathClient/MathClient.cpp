@@ -22,4 +22,7 @@ int main(int argc, char **argv) {
 
 	//Concatinating the strings "", "" with spaces
 	std::cout << concatStrSpc("Hello", "World") << std::endl;
+
+	printf("Square root of 9 = %lf\r\n", squareRoot(9));
+	printf("18 ^ 6 = %lf\r\n", expo(18, 6));
 }
